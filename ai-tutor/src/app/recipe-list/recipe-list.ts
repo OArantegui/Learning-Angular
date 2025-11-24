@@ -1,11 +1,13 @@
 import { Component, signal, computed } from '@angular/core';
 import { RecipeModel } from '../models';
 import { MOCK_RECIPES } from '../mock-recipes';
+import { RecipeDetail } from '../recipe-detail/recipe-detail';
 
 @Component({
     selector: 'app-recipe-list',
     templateUrl: './recipe-list.html',
-    styles: ``
+    styles: ``,
+    imports: [RecipeDetail]
 })
 export class RecipeList {
     // This component holds the "State"

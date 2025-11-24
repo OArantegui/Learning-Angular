@@ -1,9 +1,6 @@
-<h1>{{ recipe().name }}</h1>
-
-<img [src]="recipe().image" [alt]="recipe().name" width="300" style="border-radius: 8px; margin-bottom: 1rem;" />
-
-<p>{{ recipe().description }}</p>
-
+<!--Calls directly the component detail instead of hardcoding it-->
+<app-recipe-detail [recipe]="recipe()" />
+<!--Button switches between recipes-->
 <button type="button" (click)="toggleRecipe()">
     Switch Recipe
 </button>
