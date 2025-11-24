@@ -1,0 +1,22 @@
+<article class="recipe-card">
+    <img [src]="recipe().image" [alt]="recipe().name" class="recipe-img" />
+
+    <div class="content">
+        <h2>{{ recipe().name }}</h2>
+        <p class="description">{{ recipe().description }}</p>
+
+        <div class="controls">
+            <span>Servings: {{ servings() }}</span>
+            <button (click)="decrement()">-</button>
+            <button (click)="increment()">+</button>
+        </div>
+
+        <ul>
+            @for (item of adjustedIngredients(); track item.name) {
+            <li>
+                <strong>{{ item.quantity }} {{ item.unit }}</strong> {{ item.name }}
+            </li>
+            }
+        </ul>
+    </div>
+</article>

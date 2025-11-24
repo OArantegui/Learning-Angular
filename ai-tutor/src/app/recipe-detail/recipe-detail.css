@@ -1,0 +1,24 @@
+.recipe-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    max-width: 400px;
+    font-family: sans-serif;
+}
+
+.recipe-img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.controls {
+    margin: 1rem 0;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+button {
+    padding: 0.25rem 0.75rem;
+    cursor: pointer;
+}

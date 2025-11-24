@@ -1,17 +1,15 @@
 import { Component, signal, computed } from '@angular/core';
 import { RecipeModel } from '../models';
 import { MOCK_RECIPES } from '../mock-recipes';
+import { RecipeDetail } from '../recipe-detail/recipe-detail';
 
 @Component({
     selector: 'app-recipe',
     template: `
-    <h1>{{title().name}}</h1>
-    <img [src]="title().image" [alt]="title().name" width="300">
-    <p>{{title().description}}</p>
-    <p>Ingredients: {{ingredientsCount()}}</p>
-    <button type="button" (click)="ToggleRecipe()">Add Recipe</button>
+    <app-recipe-detail [recipe]="title()"></app-recipe-detail>
   `,
-    styles: ``
+    styles: ``,
+    imports: [RecipeDetail]
 })
 export class RecipeComponent {
     protected readonly title = signal<RecipeModel>(MOCK_RECIPES[0]);
