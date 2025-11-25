@@ -3,22 +3,85 @@
     border-radius: 8px;
     padding: 1rem;
     max-width: 400px;
-    font-family: sans-serif;
+    font-family: 'Inter', sans-serif;
+    /* Adds depth */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin: 0 auto;
+    /* Centers the card if it's the only thing */
 }
 
 .recipe-img {
     width: 100%;
+    height: 200px;
+    object-fit: cover;
+    /* Ensures image doesn't stretch weirdly */
     border-radius: 8px;
+    margin-bottom: 1rem;
 }
 
+/* Typography Hierarchy */
+h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    margin: 0 0 0.5rem 0;
+}
+
+.description {
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+/* Controls Toolbar */
 .controls {
-    margin: 1rem 0;
+    background: #f9f9f9;
+    padding: 0.75rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    /* Pushes text and buttons apart */
+    align-items: center;
+    font-weight: 600;
+}
+
+.btn-group {
     display: flex;
     gap: 0.5rem;
-    align-items: center;
 }
 
 button {
-    padding: 0.25rem 0.75rem;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 32px;
+    height: 32px;
     cursor: pointer;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+button:hover {
+    background: #eee;
+    border-color: #bbb;
+}
+
+/* Clean List Styles */
+ul {
+    list-style: none;
+    /* Removes bullets */
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #f0f0f0;
+    display: flex;
+    gap: 0.5rem;
+}
+
+li:last-child {
+    border-bottom: none;
 }
