@@ -1,0 +1,33 @@
+/* src/app/recipe-list/recipe-list.css */
+:host {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    font-family: 'Inter', sans-serif;
+}
+
+button {
+    background-color: #333;
+    /* Dark primary color */
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 2rem;
+    /* Pill shape */
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.1s ease, background-color 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #000;
+    transform: translateY(-1px);
+}
+
+button:active {
+    transform: translateY(1px);
+}

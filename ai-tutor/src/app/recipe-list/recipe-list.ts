@@ -6,7 +6,7 @@ import { RecipeDetail } from '../recipe-detail/recipe-detail';
 @Component({
     selector: 'app-recipe-list',
     templateUrl: './recipe-list.html',
-    styles: ``,
+    styleUrl: './recipe-list.css',
     imports: [RecipeDetail]
 })
 export class RecipeList {
