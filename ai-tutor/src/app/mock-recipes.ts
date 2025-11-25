@@ -13,6 +13,7 @@ export const MOCK_RECIPES: RecipeModel[] = [
       { name: 'Black Pepper', quantity: 1, unit: 'tsp' },
     ],
     image: 'https://placehold.co/600x400?text=Spaghetti+Carbonara',
+    isFavourite: true,
   },
   {
     id: 2,
@@ -25,5 +26,6 @@ export const MOCK_RECIPES: RecipeModel[] = [
       { name: 'Extra Virgin Olive Oil', quantity: 2, unit: 'tbsp' },
     ],
     image: 'https://placehold.co/600x400?text=Caprese+Salad',
+    isFavourite: false,
   },
 ];
