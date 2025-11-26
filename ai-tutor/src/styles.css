@@ -1,4 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+/* Import the Azure/Blue Pre-built Theme */
+@import '@angular/material/prebuilt-themes/azure-blue.css';
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+/* Import Material Icons and Roboto Font */
+@import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+@import 'https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap';
+
+/* Set up basic body styles */
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
