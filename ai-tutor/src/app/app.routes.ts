@@ -7,7 +7,7 @@
  */
 import { Routes } from '@angular/router';
 import { RecipeList } from './recipe-list/recipe-list';
-
+import { RecipeAdd } from './recipe-add/recipe-add';
 
 export const routes: Routes = [
     {
@@ -19,5 +19,9 @@ export const routes: Routes = [
     {
         path: 'recipes',
         component: RecipeList
+    },
+    {
+        path: 'recipe-add',
+        component: RecipeAdd
     }
 ];

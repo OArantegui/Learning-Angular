@@ -8,7 +8,15 @@ export class RecipeService {
     public getRecipes() {
         return this.recipes;
     }
-
+    addRecipe(newRecipe: Omit<RecipeModel, 'id'>) {
+        this.recipes.update(currentRecipes => [
+            ...currentRecipes,
+            {
+                ...newRecipe,
+                id: Date.now(),
+            }
+        ]);
+    }
 }
 
 
