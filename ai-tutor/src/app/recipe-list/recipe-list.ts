@@ -1,8 +1,8 @@
-import { Component, signal, computed } from '@angular/core';
+import { Component, signal, computed, inject } from '@angular/core';
 import { RecipeModel } from '../models';
-import { MOCK_RECIPES } from '../mock-recipes';
 import { RecipeDetail } from '../recipe-detail/recipe-detail';
 import { FormsModule } from '@angular/forms';
+import { RecipeService } from '../recipe.service';
 
 @Component({
     selector: 'app-recipe-list',
@@ -12,7 +12,8 @@ import { FormsModule } from '@angular/forms';
 })
 export class RecipeList {
     // This component holds the "State"
-    protected readonly recipes = signal<RecipeModel[]>(MOCK_RECIPES)
+    protected readonly recipeService = inject(RecipeService)
+    protected readonly recipes = signal<RecipeModel[]>(this.recipeService.getRecipes())
     protected readonly searchTerm = signal('')
 
     protected readonly filteredRecipes = computed(() => {
