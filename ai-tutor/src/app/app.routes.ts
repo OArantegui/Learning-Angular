@@ -17,7 +17,7 @@ export const routes: Routes = [
 
     },
     {
-        path: '',
+        path: 'recipes',
         component: RecipeList
     }
 ];
