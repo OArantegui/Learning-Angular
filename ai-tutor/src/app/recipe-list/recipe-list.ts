@@ -13,7 +13,7 @@ import { RecipeService } from '../recipe.service';
 export class RecipeList {
     // This component holds the "State"
     protected readonly recipeService = inject(RecipeService)
-    protected readonly recipes = signal<RecipeModel[]>(this.recipeService.getRecipes())
+    protected readonly recipes = this.recipeService.getRecipes()
     protected readonly searchTerm = signal('')
 
     protected readonly filteredRecipes = computed(() => {

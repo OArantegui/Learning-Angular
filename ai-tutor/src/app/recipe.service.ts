@@ -6,7 +6,7 @@ import { Injectable, signal } from "@angular/core";
 export class RecipeService {
     private readonly recipes = signal<RecipeModel[]>(MOCK_RECIPES);
     public getRecipes() {
-        return this.recipes();
+        return this.recipes;
     }
 
 }
