@@ -1,6 +1,19 @@
-<form [formGroup]="form" (ngSubmit)="onSubmit()">
-    <input type="text" placeholder="Name" />
-    <input type="text" placeholder="Description" />
-    <input type="text" placeholder="Image" />
-    <button type="submit">Add Recipe</button>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Recipe</title>
+</head>
+
+<body>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <input type="text" placeholder="Name" />
+        <input type="text" placeholder="Description" />
+        <input type="text" placeholder="Image" />
+        <button type="submit">Add Recipe</button>
+    </form>
+</body>
+
+</html>
