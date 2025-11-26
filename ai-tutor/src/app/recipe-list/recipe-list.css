@@ -8,26 +8,17 @@
     font-family: 'Inter', sans-serif;
 }
 
-button {
-    background-color: #333;
-    /* Dark primary color */
-    color: white;
-    border: none;
-    padding: 0.75rem 1.5rem;
-    border-radius: 2rem;
-    /* Pill shape */
+.search-bar input {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 300px;
     font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: transform 0.1s ease, background-color 0.2s;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-button:hover {
-    background-color: #000;
-    transform: translateY(-1px);
-}
-
-button:active {
-    transform: translateY(1px);
+.recipe-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
 }
